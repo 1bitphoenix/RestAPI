@@ -1,7 +1,9 @@
 package com.example.rituka.restapi;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 /**
@@ -9,8 +11,13 @@ import retrofit2.http.Query;
  */
 
 public interface UserName {
-    @GET("/posts")
-    Call<String> getName(
+    @GET("/what")
+    Call<Name> getName(
         @Query("name") String userName
+    );
+
+    @POST("/rohan")
+    Call<Name> postName(
+            @Body RequestName name
     );
 }

@@ -16,6 +16,7 @@ public class API {
         return userName;
     }
 
+
     private API(){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://testresapi.herokuapp.com")

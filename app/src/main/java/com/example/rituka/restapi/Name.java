@@ -5,17 +5,18 @@ package com.example.rituka.restapi;
  */
 
 public class Name {
-    int id;
+    String id;
 
-    public Name(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public int getId() {
+    public Name(String id) {
+
+        this.id = id;
+    }
+
+    public String getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }
